@@ -1,5 +1,5 @@
 const names = ["James", "Mieke", "Stef", "Jannes"];
-console.log(names.map(name => {
+console.log(names.map((name) => {
   return name.toUpperCase();
 }));
 
