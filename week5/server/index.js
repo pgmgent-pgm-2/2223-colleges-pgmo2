@@ -10,5 +10,5 @@ app.use(bodyParser.json());
 app.use('/api', apiRoutes);
 
 app.listen(PORT, HOSTNAME, () => {
-  console.log(`Server is listening on HTTP://${HOSTNAME}:${PORT}`);
-})
+  // console.log(`Server is listening on HTTP://${HOSTNAME}:${PORT}`);
+});
