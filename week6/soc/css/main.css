@@ -1,0 +1,158 @@
+/*
+Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*
+Global
+*/
+:root {
+  --color-black-900: hsl(0, 0%, 0%);
+  --color-black-300: hsl(0, 0%, 80%);
+  --color-black-200: hsl(0, 0%, 90%);
+  --color-black-100: hsl(0, 0%, 100%);
+  --color-blue: hsl(194, 100%, 43%);
+  --color-blue-light: hsl(194, 100%, 60%);
+  --color-green: hsl(110, 45%, 50%);
+  --color-green-light: hsl(110, 45%, 65%);
+  --color-purple: hsl(261, 49%, 56%);
+  --color-purple-light: hsl(262, 48%, 69%);
+  --color-pink: hsl(323, 100%, 41%);
+  --color-pink-light: hsl(323, 100%, 59%);
+  --color-red: hsl(347, 100%, 46%);
+  --color-red-light: hsl(347, 100%, 63%);
+  --color-orange: hsl(26, 91%, 58%);
+  --color-orange-light: hsl(26, 91%, 71%);
+  --font-family-roboto-slab: 'Roboto Slab', serif;
+  --font-family-source-code-pro: 'Source Code Pro', monospace;
+  --mouse-outer-size: 64px;
+  --mouse-inner-size: 6px;
+  --padding: 8px;
+  --padding-1\/4: calc(var(--padding) * 1/4);
+  --padding-1\/2: calc(var(--padding) * 1/2);
+  --padding-2: calc(var(--padding) * 2);
+  --padding-4: calc(var(--padding) * 4);
+  --padding-8: calc(var(--padding) * 8);
+  --padding-16: calc(var(--padding) * 16);
+  --border-width: 2px; 
+  --maxwidth: 1536px; 
+  --sidebar-width: 15%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-black-100);
+  color: var(--color-black-900);
+
+  font-family: var(--font-family-source-code-pro);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, 
+h6 {
+  font-family: var(--font-family-roboto-slab);
+}
+
+.container {
+  max-width: var(--max-width);
+  padding-left: var(--padding-2);
+  padding-right: var(--padding-2);
+  margin: 0 auto;
+}
+
+.container-full {
+  width: 100vw;
+  padding-left: var(--padding-2);
+  padding-right: var(--padding-2);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*
+Header
+*/
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 68px;
+  background-color: var(--color-black-200);
+  border-bottom: var(--border-width) solid var(--color-black-300);
+
+  padding: var(--padding-2);
+}
+
+.logo__text {
+  font-size: 1.62rem;
+  text-transform: uppercase;
+}
+
+.meta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.current {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: var(--padding-2);
+}
+
+.dogs-anti-shit-tile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dogs-anti-shit-tile > i {
+  margin-left: var(--padding);
+
+  font-size: 2rem;
+}
+
+.current__wind-icon {
+  margin-left: var(--padding);
+
+  font-size: 1.6rem;
+  width: 36px;
+  height: 36px;
+
+  border: var(--border-width) solid var(--color-black-900);
+  border-radius: 50%;
+}
+
+.current__wind-icon::before {
+  position: relative;
+}

@@ -1,0 +1,8 @@
+@baseUrl = http://localhost:8080
+
+###
+GET {{baseUrl}}/api/users 
+
+###
+
+GET {{baseUrl}}/api/users/f65e5656-e4cd-4668-9fe7-fbd03a84879d
